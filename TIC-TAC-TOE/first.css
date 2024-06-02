@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure box-sizing is border-box for all elements */
+}
+
+body {
+    background-color: rgb(108, 207, 207);
+    display: flex; /* Centering items vertically */
+    justify-content: center; /* Centering items horizontally */
+    align-items: center; /* Centering items vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centering boxes horizontally */
+    align-items: center; /* Centering boxes vertically */
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); /* Corrected syntax for box-shadow */
+    font-size: 8vmin;
+    color: red;
+    background-color: #ffffff; /* Corrected syntax for white color */
+}
+
+#reset-btn, #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: royalblue;
+    color: black;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer; /* Add cursor pointer for better UX */
+}
+
+#msg {
+    color: coral;
+    font-size: 8vmin;
+}
+
+.msg-container {
+    height: 30vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hide {
+    display: none;
+}
